@@ -9,7 +9,7 @@ However, some results are not reflected in the review, and upon looking at each 
 
 ## Question 2: Do you think they caught all the vulnerabilities present in the code? Why or why not?
 
-Even if we have all the code scanners in the world it is still possible to miss certain vulnerabilities. Something that we have learned in this course, COMP-3021, one of the main principles of security is that there is no security guarantee. No application or system is guaranteed to be secure from all attacks or exploitation of vulnerabilities. All we can do it is to always keep in mind to design programs keeping security as the forefront of our minds and to habitually pratice the fundamental security principles and coding standards so that it would be easier for the next generation of developers. 
+Even if we have all the code scanners in the world it is still possible to miss certain vulnerabilities. Something that we have learned in this course, COMP-3021, one of the main principles of security is that there is no security guarantee. No application or system is guaranteed to be secure from all attacks or exploitation of vulnerabilities. All we can do it is to always keep in mind to design programs keeping security as the forefront of our minds and to habitually pratice the fundamental security principles and coding standards so that it would be easier for the next junior developers handling and testing the code. 
 
 ## Question 3: Why is using multiple code scanners better than using one?
 
