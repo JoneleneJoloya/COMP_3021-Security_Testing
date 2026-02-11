@@ -13,9 +13,7 @@ Even if we have all the code scanners in the world it is still possible to miss 
 
 ## Question 3: Why is using multiple code scanners better than using one?
 
-
-
-It is simply like having multiple body guards for one public figure
+Every code scanner is designed to analyze certain aspects of the source code with various tools and certain modules. For example, the bandit helps find common security issues in python code by building abstract syntax trees (AST) from it and running appropriate plugins against AST nodes. However, some code scanners produce overlapping results with other code scanners or linters, like how the super-linter uses various tools for their analysis reports. Though it is better to use more than one code scanner to detect vulnerabilities and errors, in case one of the code scanners are not designed to capture a specific vulnerability in the source code that could cause a breach down the line. 
 
 ### References:
 
@@ -33,6 +31,10 @@ https://github.com/PyCQA/bandit
 
 - Super-linter - Github:
 https://github.com/super-linter/super-linter
+
+- CodeQL and CodeQL queries- Github:
+https://codeql.github.com/
+https://github.com/github/codeql
 
 - Principles of Security:
 https://learn.rrc.ca/d2l/le/content/702614/viewContent/11089901/View
