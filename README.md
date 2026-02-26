@@ -1,5 +1,6 @@
 # Reflection Questions
 
+## Assignment 2
 ## Question 1: Do these results match what you found in your previous peer review? Why or why not?
 The results from the code scanning using the codeQL, Bandit and super-linter shows a comparable and similar issue found in the previous peer review. In the case of the python file from assignment 1 for instance, it alerts us that **url in the `get_data` function is open for permitted schemes**. For the peer review, I commented it is possible that the url may be unsafe and susceptible to manipulation when fetching the remote resource (API) without proper validation. 
 
@@ -14,6 +15,12 @@ Even if we have all the code scanners in the world it is still possible to miss 
 ## Question 3: Why is using multiple code scanners better than using one?
 
 Every code scanner is designed to analyze certain aspects of the source code with various tools and certain modules. For example, the bandit helps find common security issues in python code by building abstract syntax trees (AST) from it and running appropriate plugins against AST nodes. However, some code scanners produce overlapping results with other code scanners or linters, like how the super-linter uses various tools for their analysis reports. Though it is better to use more than one code scanner to detect vulnerabilities and errors, in case one of the code scanners are not designed to capture a specific vulnerability in the source code that could cause a breach down the line. 
+
+## Assignment 3
+## How did the AppScan CodeSweep scan performance compare to the previous code scanners you used?
+AppScan CodeSweep seems convenient as it scans and presents the security issues as soon as you make changes and save the file, probably due to the application directly installed within VS Code. 
+Furthermore, it provides a clean and colour-coded interface to identify what type of security issue is present in the source code. For example, there is a security issue about the hardcoded credentials which we have noticed during the peer review. This is highlighted and noted in red. On the otherhand, the typescript issue in regards to the standard input in line 15 is highlighted and noted in orange. 
+
 
 ### References:
 
@@ -38,3 +45,6 @@ https://github.com/github/codeql
 
 - Principles of Security:
 https://learn.rrc.ca/d2l/le/content/702614/viewContent/11089901/View
+
+- HCL AppScan Solution:
+https://www.hcl-software.com/appscan/home
