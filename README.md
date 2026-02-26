@@ -18,9 +18,9 @@ Every code scanner is designed to analyze certain aspects of the source code wit
 
 ## Assignment 3
 ## How did the AppScan CodeSweep scan performance compare to the previous code scanners you used?
-AppScan CodeSweep seems convenient as it scans and presents the security issues as soon as you make changes and save the file, probably due to the application directly installed within VS Code. 
-Furthermore, it provides a clean and colour-coded interface to identify what type of security issue is present in the source code. For example, there is a security issue about the hardcoded credentials which we have noticed during the peer review. This is highlighted and noted in red. On the otherhand, the typescript issue in regards to the standard input in line 15 is highlighted and noted in orange. 
-
+AppScan CodeSweep seems convenient as it scans and presents the security issues as soon as you make changes and save the file, probably due to the application directly installed within VS Code (IDE). In comparison, the results from the scans of CodeQL and Bandit are only visible in github. 
+Moreover, it provides a clean and colour-coded interface to identify what type of security issue is present in the source code. For example, there is a security issue about the "hardcoded credentials" which we have also noticed during the peer review. This issue has been highlighted and noted in red.
+AppScan Codesweep in comparison to the previous code scanners, it supports more languages compared to CodeQL and it provides a wide range of comprehensive application security solutions - SAST, DAST, API Security, secrets detection and so on. Meanwhile CodeQL and Bandit only perform SAST (Static Application Security testing). Therefore having AppScan as an additional code scanner can provide a more well-rounded result to find various issues in the source code.
 
 ### References:
 
@@ -48,3 +48,12 @@ https://learn.rrc.ca/d2l/le/content/702614/viewContent/11089901/View
 
 - HCL AppScan Solution:
 https://www.hcl-software.com/appscan/home
+
+- About code scanning with CodeQL - GitHub Docs:
+https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql
+
+- What is SAST? - opentext:
+https://www.opentext.com/ca/what-is/sast
+
+- What is DAST? - opentext:
+https://www.opentext.com/ca/what-is/dast
